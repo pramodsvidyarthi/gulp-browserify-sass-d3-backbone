@@ -1,0 +1,8 @@
+@for $i from 1 through 10 {
+    @if ($i%2 != 0) {
+        @font-face {
+            font-family: Museo-#{$i * 100};
+            src: url('/app/fonts/Museo#{$i * 100}-Regular.otf');
+        }
+    }
+}

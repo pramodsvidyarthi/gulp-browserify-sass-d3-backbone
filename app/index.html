@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gulp-Trial</title>
+    <link rel="stylesheet" type="text/css" href="../dist/stylesheets/styles.css">
+</head>
+
+<body>
+    <div class="header-container">
+        <header class="header outercontainer">
+            <!-- <a href="404.html">404 Page</a> -->
+            <div class="row">
+                <div class="col col_2 header-left">
+                    <div class='nav-icon'> <i class="fa fa-bars fa-2x fa-inverse"></i></div>
+                    <!-- <div class='img'></div> -->
+                    <img src="/dist/images/xcm_logo.png" width="120" />
+                </div>
+                <div class="col col_4 navigation">
+                    <nav>
+                        <ul>
+                            <li class='active'>Dashboard</li>
+                            <li>Tasks</li>
+                            <li>Reports</li>
+                            <li>Scheduler</li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col col_4 search">
+                    <input type="text" placeholder="search here">
+                    <i class="fa fa-search"></i>
+                    <div class='right-curved'>
+                        <i class="fa fa-caret-down fa-inverse"></i>
+                    </div>
+                </div>
+                <div class="col col_4 header-right">
+                    <button class='rounded-left uname'>user name goes here</button>
+                    <div class="notification">
+                        <span><i class="fa fa-cog fa-inverse fa-lg"></i></span>
+                        <span><i class="fa fa-bell fa-inverse fa-lg"></i></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="main-container outercontainer">
+            <div class="row">
+                <div class="col col_12 shiftleft_1 shiftright_1" id="filters">
+                    
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col_10" id="showchart">
+                </div>
+                <div class="col col_4" id="chartsummary">
+                </div>
+                <!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum nesciunt reprehenderit, et maxime ipsam inventore itaque optio quasi assumenda adipisci quam quaerat, sunt quis sequi aliquam, quibusdam nemo? Harum, vitae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis officia asperiores eius magni beatae. Reiciendis, deleniti ducimus at vel optio aut temporibus molestias consectetur pariatur, sint doloribus commodi cupiditate sed. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptate rem, sapiente deserunt laboriosam ea minus maxime facilis ut hic qui neque beatae iste dignissimos, labore, perferendis veniam tempora, modi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic voluptas necessitatibus, perferendis sapiente exercitationem reiciendis, quo natus laudantium enim facilis aperiam eveniet vel veritatis esse voluptates ipsa repellendus qui, sit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate ut quisquam asperiores libero magni, ipsa rerum similique quidem perferendis aliquid quo dolores commodi at voluptates unde odio. Quasi, beatae, minus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste quam necessitatibus, praesentium reprehenderit non quod, doloremque nesciunt pariatur dignissimos quasi suscipit quas. Placeat sapiente, maiores dolores dolor, et rerum aliquam. li{hello}*100 -->
+            </div> 
+    </div>
+    <footer class="footer-container">
+        <div class="row outercontainer">
+            <div class="col col_9">&copy; XCM Solutions, LLC all rights reserved</div>
+            <div class="col col_5"></div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="/dist/scripts/main.js"></script>
+    <script type="text/javascript">
+    var scrollable = document.body.scrollHeight > window.innerHeight;
+    console.log(document.body.scrollHeight, window.innerHeight);
+    if (scrollable) {
+        var footer = document.querySelector('.footer-container');
+        footer.style.position = "relative";
+    }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+/*Dropdown*/
+.dropdown {
+  width: 20em;
+  border: .1em solid #c0cdd1;
+
+  a {
+  display: block;
+  padding: .5em;
+  color: #000;
+  text-decoration: none;
+  @extend %transition;
+  &:focus,
+  &:hover {background: #ecf0f1;}
+  &:active {background: #fbfcfc;}
+}
+.fa {float: right}
+/*List*/
+ul {
+  display: none;
+  border-top: .1em solid #c0cdd1;
+  max-height: 250px;
+  height: auto;
+  overflow-y :auto;
+}
+li {
+  padding: .5em;
+  cursor: pointer;
+  @extend %transition;
+  &:not(:first-child) {
+    border-top: .1em dashed #dde4e6;
+  }
+  &:last-child {color: #ad0000;}
+  &:focus,
+  &:hover {background: #ecf0f1;}
+  &:active {background: #fbfcfc;}
+}
+}
+
